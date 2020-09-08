@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="card-deck">
+        <div class="card" *ngFor="let card of objects">
+            <img class="image-class" src={{card.links.mission_patch_small}} alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{card.mission_name}}#{{card.flight_number}}</h5>
+                <p><b>Mission Ids:</b> {{card.mission_id}}</p>
+                <p><b>Launch Year:</b> {{card.launch_year}}</p>
+                <p><b>Succesfull Launch:</b> {{card.launch_success}}</p>
+                <p><b>Succesfull Landing:</b> {{card.launch_year}}</p>
+            </div>
+        </div>
+
+    </div>
+</div>
