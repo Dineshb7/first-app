@@ -1,36 +1,46 @@
 body {
   padding-top: 20px;
 }
-
 .card-deck {
   margin: 0 0px;
   justify-content: space-between;
 }
-
 .card-deck .card {
   margin: 0 0 1rem;
 }
 
-@media (min-width: 700px) and (max-width: 1024px) {
+@media (min-width: 700px) and (max-width: 1023px) {
   .card-deck .card {
     -ms-flex: 0 0 48.7%;
     flex: 0 0 48.7%;
   }
-  
+    .custbtnrow{
+    margin-left: -23px !important;
+  }
 }
-@media (min-width: 576px) and (max-width: 700px) {
+@media (min-width: 576px) and (max-width: 699px) {
   .card-deck .card {
     -ms-flex: 0 0 98%;
     flex: 0 0 98%;
   }
+  .custbtnrow{
+    margin-left: -26px !important;
+  }
+  .custbutton{
+      font-size: 12px;
+  }
 }
 
 
-@media (min-width: 1024px) and (max-width: 1440px)
+@media (min-width: 1024px) and (max-width: 1439px)
 {
   .card-deck .card {
     -ms-flex: 0 0 24%;
     flex: 0 0 24%;
+  }
+  .custbtnrow{
+    margin-left: -15px !important;
+    margin-right: -15px !important;
   }
 }
 
@@ -67,6 +77,9 @@ body {
 .custrow{
   margin: 0px;
 }
+.custbtnrow{
+  margin: 0px;
+}
 .custhr{
   margin-top: 2px !important;
   margin-bottom: 0.5rem !important;
@@ -80,4 +93,7 @@ body {
     margin: 4px;
   border-radius: 0.25rem;
   background-color: lightgreen;
+}
+.center {
+  text-align: center;
 }

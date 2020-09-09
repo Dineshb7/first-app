@@ -4,36 +4,36 @@
     <div class="row custrow">
       <div class="col-sm-2 card filterCard">
         <h4 class="card-title">Filters</h4>
-        <div style="text-align: center;"> Launch Year</div>
+        <div style="text-align: center"> Launch Year</div>
         <hr class="custhr">
-        <div class="row">
+        <div class="row custbtnrow">
           <div class="col-6" style="text-align: center;" *ngFor="let item of buttons">
             <button class="custbutton" (click)="selBtn(item)">{{item}}</button>
           </div>
         </div>
-
         <div style="text-align: center;"> Launch Success</div>
         <hr class="custhr">
-        <div class="row">
-          <div class="col-6" style="text-align: center;">
-            <button class="custbutton" (click)="launchSuccessBtn('true')">True</button>
+        <div class="row custbtnrow ">
+          <div class="col-6" style="text-align: center">
+            <button class="custbutton" id="launchTruebtnid" (click)="launchSuccessBtn('true')">True</button>
           </div>
-          <div class="col-6" style="text-align: center;" >
-            <button class="custbutton" (click)="launchSuccessBtn('false')">False</button>
+          <div class="col-6" style="text-align: center">
+            <button class="custbutton" id="launchFalsebtnid">False</button>
           </div>
         </div>
 
         <div style="text-align: center;"> Land Success</div>
         <hr class="custhr">
-        <div class="row">
-          <div class="col-6" style="text-align: center;" >
-            <button class="custbutton" (click)="landSuccessBtn('true')">True</button>
+        <div class="row custbtnrow">
+          <div class="col-6" style="text-align: center">
+            <button class="custbutton" id="landSuccessTrueBtnid" (click)="landSuccessBtn('true')">True</button>
           </div>
-          <div class="col-6" style="text-align: center;">
-            <button class="custbutton" (click)="landSuccessBtn('false')">False</button>
+          <div class="col-6" style="text-align: center">
+            <button class="custbutton" id="landSuccessFalseBtnid">False</button>
           </div>
         </div>
       </div>
+
       <div class="col-sm-10">
         <div class="card-deck">
           <div class="card" *ngFor="let card of objects">
@@ -49,6 +49,9 @@
 
         </div>
       </div>
+    </div>
+    <div class="center">
+      <p> <b>Developed by:</b> Dinesh Bussa</p>
     </div>
   </div>
 </div>
